@@ -1,21 +1,30 @@
-<body class="text-center">
+
+    <body class="text-center">
+      
   <main class="form-signin w-100 m-auto">
-  <form>
-  <h1 class="h3 mb-7  fw-normal">DCX CMS</h1>
-  <div class="form-floating">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"  required>
-  <label for="floatingInput">Email Address</label>
-  </div>
-  <div class="form-floating">
-  <input type="password" class="form-control" id="floatingpassword" placeholder="name@example.com"  required>
-  <label for="floatingpassword">password</label>
-  </div>
-  <div class="none">
-      <label>
-      <input type="checkbox" value="remember-me"> Remember me
-      </label>
+    <form>
+      
+      <h1 class="h3 mb-3 fw-normal">DCX CMS</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" (keyup)="email($event)" [formControl]="emailF" >
+        <label for="floatingInput" (keyup)="email($event)">Email Address</label>
+        
       </div>
-      <button class="w-100">Sign in</button>
-      </form>
-      </main>
-  </body>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholde="Password" (keyup)="password($event)" [formControl]="pass">
+        <label for="floatingPassword" (keyup)="password($event)">Password</label>
+        
+      </div>
+  
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" (click)="signIn($event)">Sign in</button>
+      <div *ngIf="validPass === false" style="color: red;">Invalid Password</div>
+      <div *ngIf="validEmail === false" style="color: red;">Invalid Email/Username</div>
+      
+    </form>
+
