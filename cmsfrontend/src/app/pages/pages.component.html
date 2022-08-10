@@ -1,0 +1,103 @@
+<app-navbar></app-navbar>
+
+<div class="row my-4">
+  <div class="col-4">
+    <div class="list-group">
+      <a routerLink="/dashboard" routerLinkActive="active" class="list-group-item list-group-item-action"><i class="bi bi-speedometer" ></i>
+        Dashboard
+      </a>
+      <a routerLink="/pages" routerLinkActive="active" class="list-group-item list-group-item-action"><i class="bi bi-file-earmark-fill" ></i> Pages</a>
+      <a routerLink="/categories" routerLinkActive="active" class="list-group-item list-group-item-action"> <i class="bi bi-folder2-open" ></i>  Categories</a>
+      <a routerLink="/users" routerLinkActive="active" class="list-group-item list-group-item-action"> <i class="bi bi-person-fill" ></i> User Accounts</a>
+    </div>
+  </div>
+  <div class="col-sm-8">
+    <div class="main">
+  <button type="button" class="btn btn-default btn-sm">
+    <i class="bi bi-plus" style="font-size: medium; border:none;">New</i> 
+</button>
+  <button type="button" class="btn btn-default btn-sm">
+    <i class="bi bi-pencil-fill"style="font-size: medium; border:none;">Plus</i> 
+  </button>
+  <button type="button" class="btn btn-default btn-sm">
+      <i class="bi bi-x-lg"style="font-size: medium;">Delete</i> 
+    </button>
+  </div>
+    <div class="user">
+     <h3> <i class="bi bi-file-earmark-fill" ></i> Pages</h3>
+     <hr>
+     </div>
+     <div class="none">
+      <h2><span style="color: #0066b2;">Dashboard </span>/ <span style="color:grey;">Pages</span> </h2>
+
+     </div>
+     <br>
+     <div class="table-responsive">
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+          </div>
+          <th>Page Title<i class="bi bi-chevron-down"></i></th>
+          <th>Category<i class="bi bi-chevron-down"></i></th>
+          <th >Author<i class="bi bi-chevron-down"></i></th>
+
+        </tr>
+
+      </thead>
+    
+      <tbody>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+            
+        </div>
+          <td></td>
+    
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+            </div>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+            </div>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+<div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+  </div>
+  <app-footer class="mt-auto border-top px-3 text-right"></app-footer>

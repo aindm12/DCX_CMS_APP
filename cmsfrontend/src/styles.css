@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+.navbar-light{
+    background-color: #2774Ae;
+  }
+  .nav-link{
+    color: white;
+    font-size: 1.2rem;
+  }
+  .navbar-brand{
+    color: white;
+  
+  }
+  .btn{
+    color: black;
+    background-color: white;
+  
+  }
+  .search{
+    color: black;
+    background-color: white;
+  
+  }
+  .nav-link:hover{
+    background-color: #2929f0 ;
+  }
+  /* global styling for sticky footer*/
+html, body, app-root {
+  height: 100%;
+}
+body {
+  margin-bottom: 0;
+  margin-top: 0;
+}

@@ -1,0 +1,96 @@
+<app-navbar></app-navbar>
+<div class="row my-4" >
+  <div class="col-4">
+      <div class="list-group">
+        
+          <a routerLink="/dashboard"  routerLinkActive="active" class="list-group-item list-group-item-action"><i class="bi bi-speedometer" ></i>
+            Dashboard
+          </a>
+          <a routerLink="/pages" routerLinkActive="active" class="list-group-item list-group-item-action"><i class="bi bi-file-earmark-fill" ></i> Pages</a>
+          <a routerLink="/categories" routerLinkActive="active" class="list-group-item list-group-item-action"><i class="bi bi-folder2-open" ></i> Categories</a>
+          <a routerLink="/users" routerLinkActive="active" class="list-group-item list-group-item-action"><i class="bi bi-person-fill" ></i> User Accounts</a>
+</div>
+</div>
+  <div class="col-sm-8">
+
+    <div class="main">
+  
+  </div>
+    <div class="user">
+     <h3> <i class="bi bi-speedometer" ></i> Dashboard</h3>
+     <hr>
+    </div>
+     <br>
+    <h4>Latest Pages</h4>
+    <div class="table-responsive">
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <!-- <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+          </div> -->
+          <th>Page Title</th>
+          <th>Category</th>
+          <th >Author</th>
+
+        </tr>
+
+      </thead>
+    
+      <tbody>
+        <tr>
+          <div class="custom-control custom-checkbox">
+<a href="#">Sample Page One</a>            
+        </div>
+          <td>Category One</td>
+          <td>John Wick</td>
+        </tr>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <a href="#">Sample Page Two</a>            
+                    </div>
+          <td>Category Two</td>
+          <td>Vicky Nash</td>
+        </tr>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <a href="#">Sample Page Three</a>            
+            </div>
+            <td>Category One</td>
+            <td>Jenni lora</td>
+        </tr>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <a href="#">Sample Page Four</a>            
+            </div>
+          <td>Category Three</td>
+          <td>Haley Maya</td>
+          
+        </tr>
+        <tr>
+          <div class="custom-control custom-checkbox">
+            <a href="#">Sample Page Five</a>            
+            </div>
+            <td>Category Two</td>
+            <td>Austen Paige</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  
+<div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        
+      </li>
+      <button><a  href="#">View All Pages</a></button>
+
+      <li class="page-item">
+        
+      </li>
+    </ul>
+  </nav>
+</div>
+  </div>
+  <app-footer class="mt-auto border-top px-3 text-right"></app-footer>
